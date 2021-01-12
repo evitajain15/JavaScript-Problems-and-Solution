@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compare two objects</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		const matches = (obj, source) =>
+  		Object.keys(source).every(key => obj.hasOwnProperty(key) && obj[key] === source[key]);
+
+  		console.log(matches({ age: 25, name: 'John', business: true }, { name: 'John', business: true }));
+	</script>
+</body>
+</html>

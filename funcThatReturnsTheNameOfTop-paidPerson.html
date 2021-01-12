@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destructuring Assignment</title>
+</head>
+<body>
+	<script>
+		
+		function topSalary(salaries){
+			let max = 0;
+			let maxName = null;
+
+			for (const [name, salary] of Object.entries(salaries)){
+				if (max < salary) {
+					max = salary;
+					maxName = name;
+				}
+			}
+			return maxName;
+			console.log(maxName);
+			
+		}
+
+		let salaries = {
+			"John": 100,
+			"Pete":300,
+			"Mary":250
+		};
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Focus Properties</title>
+	<style> 
+		.view{
+			width: 400px;
+			height: 150px;
+			padding: 2px;
+			border: 1px solid #000;
+		}
+		[contenteditable="true"]:focus{
+			border: 4px solid red; 
+			outline: none;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>Click the div to edit.</li>
+		<li>Enter or blur saves the result.</li>
+	</ul>
+
+	HTML is allowed.
+
+	<div id="view" class="view">Text</div>
+
+	<script>
+		document.getElementById("view").contentEditable = true;
+		
+	</script>
+</body>
+</html>

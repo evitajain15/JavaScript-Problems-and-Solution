@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unique array</title>
+</head>
+<body>
+	<script>
+		function unique(arr) {
+			let unique_array = Array.from(new Set(arr))
+	    	return unique_array
+		}
+
+		let strings = ["Hare", "Krishna", "Hare", "Krishna","Krishna", "Krishna", "Hare", "Hare", ":-O"];
+	
+		alert( unique(strings) ); 
+	</script>
+</body>
+</html>

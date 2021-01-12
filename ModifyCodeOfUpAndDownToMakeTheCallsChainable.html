@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ladder-step</title>
+</head>
+<body>
+	<script>
+		let ladder ={
+			step:0,
+		up(){
+			this.step++;
+			return this;
+		},
+
+		down(){
+			this.step--;
+			return this;
+		},
+
+		show(){
+			alert (this.step);
+			return this;
+		}
+	};
+
+	//ladder.up();
+	//ladder.up();
+	//ladder.down();
+	//ladder.show(); //1
+
+	//For calls chainable
+
+	ladder.up().up().down().show(); //1
+	</script>
+</body>
+</html>

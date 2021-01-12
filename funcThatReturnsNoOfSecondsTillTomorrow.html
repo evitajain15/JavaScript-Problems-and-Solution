@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>day and date</title>
+</head>
+<body>
+	<script>
+		
+		function getSecondsToTomorrow() {
+		 let now = new Date();
+		 let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+		 console.log(tomorrow); 
+		 /*let diff = tomorrow - now; 
+		 console.log(diff);*/
+		 return Math.round((tomorrow-now)/1000);
+		}
+		
+		console.log(getSecondsToTomorrow());
+	</script>
+</body>
+</html>

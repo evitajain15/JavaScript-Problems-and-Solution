@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Exp.</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		let reg = /#([0-9a-fA-F]{3}){1,2}/gi;
+
+		let str = "color: #3f3; background-color: #AA00ef; and: #abcd";
+
+		alert( str.match(reg) ); 
+	</script>
+</body>
+</html>

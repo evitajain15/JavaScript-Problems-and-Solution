@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum to N</title>
+</head>
+<body>
+	<script>
+
+		//Recursive Method
+		/*function sumTo(n) {
+			if(n==1) return 1;
+			return n + sumTo(n-1);
+		}*/
+
+		//Iteration Method
+		/*function sumTo(n) {
+			
+			let sum = 0;
+			for(let i =0; i<=n;i++){
+				sum += i;
+			}	
+			return sum;
+		}*/
+
+		// Arithmetic progression Formula
+		function sumTo(n) {
+			return n * (n + 1) / 2;			
+		}
+
+		console.log(sumTo(100));
+	</script>
+</body>
+</html>

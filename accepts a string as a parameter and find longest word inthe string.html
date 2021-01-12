@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS program</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+
+		function findLongestWord(str){
+			var strSplit = str.split(' ');
+			var longestWord = 0;
+
+			for(var i = 0; i < strSplit.length; i++){
+				if(strSplit[i].length > longestWord){
+					longestWord = strSplit[i].length;
+				}
+			}
+			return longestWord; 
+		}
+
+		console.log(findLongestWord("SpanIdea Systems Private Limited"));
+	</script>
+</body>
+</html>

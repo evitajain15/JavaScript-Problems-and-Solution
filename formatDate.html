@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>day and date</title>
+</head>
+<body>
+	<script>
+		
+		function formatDate(date){
+			console.log(date);
+			let now = new Date();
+			console.log(now);
+			let diff = now - date;
+			//console.log(diff);
+			if(diff < 1000){
+				return "right now";
+			}
+		}
+
+		alert(formatDate(new Date(new Date - 1)))
+	</script>
+</body>
+</html>

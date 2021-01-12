@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Airplane animation</title>
+	<style>
+		#flyjet {
+	      width: 40px;
+	      height: 24px;
+	      transition: all 3s;
+	    }
+
+	    #flyjet.growing {
+	      width: 400px;
+	      height: 240px;
+	    }
+	    img{
+	    	cursor: pointer;
+	    }
+	</style>
+</head>
+<body>
+	<img id="flyjet" src="https://en.js.cx/clipart/flyjet.jpg">
+	
+	<script>
+		flyjet.onclick = function() {
+
+			let ended = false;
+
+			flyjet.addEventListener('transitionend', function() {
+				if (!ended) {
+				  ended = true;
+				  alert('Done!');
+				}
+			});
+
+			flyjet.classList.add('growing');
+		}
+	</script>
+</body>
+</html>

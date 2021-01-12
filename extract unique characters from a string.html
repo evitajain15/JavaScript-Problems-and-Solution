@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unique string</title>
+</head>
+
+<body>
+
+	<script>
+		function unique_char(str){
+			let res =  str.split('');
+			let unique = Array.from(new Set(res));
+			return unique.join('');
+
+		}  
+
+		console.log(unique_char("thequickbrownfoxjumpsoverthelazydog"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array - Sort-Name</title>
+</head>
+<body>
+	<script>
+
+		function sortByName(arr){
+			arr.sort((a, b) => a.name > b.name ? 1 : -1);
+		}
+
+		let john = { name: "John", age: 25 };
+		let pete = { name: "Pete", age: 30 };
+		let mary = { name: "Mary", age: 28 };
+
+		let arr = [ john, pete, mary ];
+
+		sortByName(arr);
+		//console.log();
+		alert(arr[1].name);
+
+	</script>
+</body>
+</html>

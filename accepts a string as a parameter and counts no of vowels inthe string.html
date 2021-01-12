@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS program</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+
+		function getVowels(str) {
+			let no = str.match(/[aeiou]/gi);
+			return no === null ? 0 : no.length;
+		}
+
+		console.log(getVowels("The quick brown fox"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>unique value</title>
+</head>
+<body>
+	<script>
+		function unique(arr) {
+			let unique = Array.from(new Set(arr));
+			return unique;
+		}
+
+		let values = ["Hare","krishna","Hare","krishna","krishna","krishna","Hare","Hare", ":-0"];
+		console.log(unique(values));
+	</script>
+</body>
+</html>

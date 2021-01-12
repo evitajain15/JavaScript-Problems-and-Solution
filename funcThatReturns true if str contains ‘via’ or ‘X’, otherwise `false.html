@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Spam</title>
+</head>
+<body>
+	<script>
+		
+		function checkSpam(str) {
+			let string = str.toLowerCase();
+			console.log(string);
+			if (string.includes("via") || (string.includes("x"))) {
+				return true;
+			}
+			return false;
+		}
+
+		console.log(checkSpam('free xxxxx'));
+		console.log(checkSpam('innocent rabbit'));
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Exp.</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		function parse(expr) {
+			
+			let reg = /(-?\d+(?:\.\d+)?)\s*([-+*\/])\s*(-?\d+(?:\.\d+)?)/;
+
+			let result = expr.match(reg);
+
+			if (!result) return [];
+			result.shift();
+
+			return result;
+		}
+
+		alert( parse("-1.23 * 3.45") );
+	</script>
+</body>
+</html>

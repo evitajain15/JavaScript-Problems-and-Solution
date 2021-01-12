@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compare two objects</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		const csv = (data, delimiter = ',', omitFirstRow = false) =>
+		data
+			.slice(omitFirstRow ? data.indexOf('\n') + 1 : 0)
+			.split('\n')
+			.map(v => v.split(delimiter));
+
+		console.log(csv('a,b\nc,d')); 
+	</script>
+</body>
+</html>

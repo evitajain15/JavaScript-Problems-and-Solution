@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS program</title>
+</head>
+<body>
+
+	<script>
+		const yes_No = (val) =>
+		/^(y|yes)$/i.test(val) ? true : /^(n|no)$/i.test(val) ? false : false;
+		
+		console.log(yes_No('Y'));  
+		console.log(yes_No('No')); 
+	</script>
+</body>
+</html>

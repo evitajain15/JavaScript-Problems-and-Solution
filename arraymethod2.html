@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anagrams</title>
+</head>
+<body>
+	<script>
+		
+		let messages = [
+		    {text: "Hello", from: "John"},
+		    {text: "How goes?", from: "John"},
+		    {text: "See you soon", from: "Alice"}
+		];
+
+		let readSet = new WeakSet(messages);
+
+		
+
+		messages.shift();
+
+		console.log(messages[0]);
+	</script>
+</body>
+</html>

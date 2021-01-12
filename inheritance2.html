@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inheritance</title>
+</head>
+<body>
+	<script>
+		let animal = {
+			eat() {
+				this.full = true;
+			}
+		};
+
+		let rabbit = {
+			__proto__: animal
+		};
+
+		rabbit.eat();
+		alert( rabbit.full); //Rabbit recieve the full property
+		
+	</script>
+</body>
+</html>

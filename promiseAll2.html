@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Promises</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		let urls = [
+			'https://api.github.com/users/iliakan',
+			'/',
+			'http://no-such-url'
+		];
+
+		Promise.all(
+			urls.map(url => fetch(url).catch(err => err))
+		)
+		.then(responses => Promise.all(
+			responses.map(r => r instanceof Error ? r : r.json().catch(err => err))
+		))
+		.then(results => {
+			alert(results[0].name); 
+			alert(results[1]);
+			alert(results[2]);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Properties</title>
+</head>
+<body>
+	<select id="genres">
+		<option value="rock">Rock</option>
+		<option value="blues" selected>Blues</option>
+	</select>
+	<script>
+		 genres.options[1].selected = true;
+		 let new_option = new Option("Classics", "Classics", true, true);
+		 genres.append(new_option);
+	</script>
+</body>
+</html>

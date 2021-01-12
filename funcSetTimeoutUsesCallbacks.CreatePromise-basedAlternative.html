@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Promises</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		function delay(ms) {
+			return new Promise(resolve => setTimeout(resolve,ms));
+		}
+
+		delay(3000).then(() => alert('runs after 3 seconds'));
+	</script>
+</body>
+</html>

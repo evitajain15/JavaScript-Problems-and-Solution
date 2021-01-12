@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>second Greatest and lowest program</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		function greatestLowest(arr){
+			arr.sort(function(x,y){
+				return x-y;
+			});
+
+			let unique = [arr[0]];
+			let result = [];
+
+			for(let j=1; j < arr.length; j++){
+				if(arr[j-1] !== arr[j]){
+					unique.push(arr[j]);
+				}
+			}
+			result.push(unique[1],unique[unique.length-2]);
+			return result.join(',');
+		}
+
+		console.log(greatestLowest([1,2,3,4,5]));
+	</script>
+</body>
+</html>

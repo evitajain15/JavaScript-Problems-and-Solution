@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bubbling</title>
+  <style>
+     body * {
+      margin: 10px;
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+
+<form>FORM
+  <div>DIV
+    <p>P</p>
+  </div>
+</form>
+
+<script>
+  for(let element of document.querySelectorAll('*')) {
+    element.addEventListener("click", e => alert(`Capturing: ${element.tagName}`), true);
+    element.addEventListener("click", e => alert(`Bubbling: ${element.tagName}`));
+  }
+</script>
+</body>
+</html>

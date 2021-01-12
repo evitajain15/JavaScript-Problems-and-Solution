@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON</title>
+</head>
+<body>
+	<script>
+		let room = {
+			guest: "SpanIdea",
+			toJSON(){
+				return this.guest;
+			}
+		};
+
+		console.log(JSON.stringify(room));
+	</script>
+</body>
+</html>

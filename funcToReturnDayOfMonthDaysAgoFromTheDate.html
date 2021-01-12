@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>day and date</title>
+</head>
+<body>
+	<script>
+		
+		function getDateAgo(date,days){
+			let newdate = new Date(date);
+
+			newdate.setDate(date.getDate() - days);
+			 return newdate.getDate();
+			
+		}
+
+		let date = new Date(2015, 0, 2);
+
+		console.log( getDateAgo(date, 1) ); 
+		console.log( getDateAgo(date, 2) ); 
+		console.log( getDateAgo(date, 365) ); 
+		
+	</script>
+</body>
+</html>

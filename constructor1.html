@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inheritance</title>
+</head>
+<body>
+	<script>
+		function User(name) {
+			this.name = name;
+		}		
+
+		let obj = new User("John");
+		let obj2 = new obj.constructor("Mary");
+
+		alert(obj2.name);
+
+	</script>
+</body>
+</html>

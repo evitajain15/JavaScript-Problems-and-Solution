@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>accumlator-constructor</title>
+</head>
+<body>
+	<script>
+		function Accumlator(startingValue){
+			this.value = startingValue;
+
+			this.read = function(){
+				this.value += +prompt("Add no to value", "0");
+				console.log(this.value);
+			}
+			
+		};
+		let accumlator = new Accumlator(1);
+		accumlator.read();
+		accumlator.read();
+	</script>
+</body>
+</html>

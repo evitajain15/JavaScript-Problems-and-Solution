@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>second Greatest and lowest program</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		function perfect(no){
+			let temp = 0;
+			for(var i=1;i<=no/2;i++){
+				if(no%i === 0){
+					temp += i;
+				}
+			}
+
+			if(temp === no && temp !== 0){
+				console.log("It is a perfect no.");
+			} else{
+				console.log("It is not a perfect no.");
+			}   
+		} 
+		perfect(28); 
+	</script>
+</body>
+</html>

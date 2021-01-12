@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator-constructor</title>
+</head>
+<body>
+	<script>
+		function Calculator(){
+			this.read = function (){
+				this.a =+ prompt("Enter the value of a?", "0");
+				this.b =+ prompt("Enter the value of b?", "0");
+			},
+			this.sum = function(){
+				return this.a +this.b;
+			},
+			this.mul = function(){
+				return this.a * this.b;
+			}
+		};
+		let calculator = new Calculator();
+		calculator.read();
+		console.log("SUM:",calculator.sum());
+		console.log("MULTIPLY:",calculator.mul());
+	</script>
+</body>
+</html>

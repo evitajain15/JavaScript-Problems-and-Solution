@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS program</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		const bifurcate = (arr, filter) =>
+		arr.reduce((acc, val, i) => (acc[filter[i] ? 0 : 1].push(val), acc), [[], []]);
+		
+		console.log(bifurcate([1, 2, 3, 4], [true, true, false, true]));
+	</script>
+</body>
+</html>

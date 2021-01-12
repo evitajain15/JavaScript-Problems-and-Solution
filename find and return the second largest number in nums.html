@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second Largest Number</title>
+</head>
+<body>
+	<script>
+		function getSecondLargest(nums) {
+			let firstno = 0;
+			let secondno = 0;
+
+			for (let i = 0; i < nums.length; i++) {
+				if (firstno < nums[i]) {
+					secondno = firstno;
+					firstno = nums[i];
+				}
+				else if (secondno < nums[i] && nums[i]!=firstno) {
+					secondno = nums [i];
+				}	
+			}
+			return secondno;
+		}
+
+		let nums = [2,3,6,6,5];
+		console.log(getSecondLargest(nums))
+                
+		/*function getSecondLargest(nums) {
+			let unique = Array.from(new Set(nums));
+			
+			let s=	unique.sort(function(a, b){return b-a}) [1];
+			return s;
+		}
+
+		let nums = [2,3,6,6,5];
+
+		console.log(getSecondLargest(nums));*/
+	</script>
+</body>
+</html>

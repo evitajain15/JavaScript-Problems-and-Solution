@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inheritance</title>
+</head>
+<body>
+	<script>
+		/*function Rabbit() {} 
+		Rabbit.prototype = {
+			eats: true
+		};
+
+		let rabbit = new Rabbit();
+		alert(rabbit.eats); */// true
+
+		//A.
+		/*function Rabbit() {} 
+		Rabbit.prototype = {
+			eats: true
+		};
+
+		let rabbit = new Rabbit();
+
+		Rabbit.prototype = {};
+		alert(rabbit.eats);*/ // true	
+
+		//B.
+		/*function Rabbit() {} 
+		Rabbit.prototype = {
+			eats: true
+		};
+
+		let rabbit = new Rabbit();
+
+		Rabbit.prototype.eats = false;
+		alert(rabbit.eats);*/	//false
+
+		//C.
+		/*function Rabbit() {} 
+		Rabbit.prototype = {
+			eats: true
+		};
+
+		let rabbit = new Rabbit();
+
+		delete rabbit.eats;
+		alert(rabbit.eats);*/	//true
+
+		//C.
+		function Rabbit() {} 
+		Rabbit.prototype = {
+			eats: true
+		};
+
+		let rabbit = new Rabbit();
+
+		delete Rabbit.prototype.eats;
+		alert(rabbit.eats);	//undefined
+
+	</script>
+</body>
+</html>

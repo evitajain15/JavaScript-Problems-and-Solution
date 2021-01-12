@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>day and date</title>
+</head>
+<body>
+	<script>
+		
+		function getLocalDay(date){
+
+			let day = date.getDay();
+			return day;
+		}
+
+		let date = new Date(2012, 0, 3);
+		console.log(date);
+		console.log ( getLocalDay(date) );
+		
+	</script>
+</body>
+</html>

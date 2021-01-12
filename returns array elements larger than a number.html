@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count</title>
+</head>
+
+<body>
+
+	<script>
+		function BiggerElements(val){
+			return function(evalue, index, array)
+			{
+				return (evalue >= val);
+			};
+		}
+		
+		let result = [11, 45, 4, 31, 64, 10]. filter(BiggerElements(10));
+		console.log(result);
+	</script>
+</body>
+</html>

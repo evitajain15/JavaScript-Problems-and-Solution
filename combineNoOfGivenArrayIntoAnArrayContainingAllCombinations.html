@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combine the numbers</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		const combine = arr => arr.reduce((a, v) => a.concat(a.map(r => [v].concat(r))), [[]]);
+		
+		console.log(combine([1, 2]));
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count</title>
+</head>
+
+<body>
+
+	<script>
+		function count(str) {
+			var uchars = {};
+			str.replace(/\S/g, function(length){uchars[length] = (isNaN(uchars[length]) ? 1 : uchars[length] + 1);});
+			return uchars;
+		}
+
+		console.log(count("The quick brown fox jumps over the lazy dog"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator-prompt</title>
+</head>
+<body>
+	
+	<!-- <div class="fix" style="position: relative; background-color: red;width: 50%; height: 20px;">vfdzcd
+	</div>
+	<div class="rel" style="position: absolute; background-color: blue;width: 50%;height: 20px;">cdsuikjc
+	</div>
+	
+	<div class="abs" style="position: fixed; background-color: pink;width: 50%; height: 20px;  ">qwerty
+	</div>
+	<div class="abs" style="position: static; background-color: black;width: 50%; height: 20px;  ">ASQWRS
+	</div> -->
+ <div id="twitter_status"></div>
+	<script>
+		
+	// 	let calculator ={
+	// 	sum(){
+	// 		return this.a + this.b;
+	// 	},
+
+	// 	mul(){
+	// 		return this.a * this.b;
+	// 	},
+
+	// 	read(){
+	// 		this.a =+ prompt("Enter the value of a?","0");
+	// 		this.b =+ prompt("Enter the value of b?","0");
+	// 	}
+	// };
+	// calculator.read();
+	// console.log(calculator.sum());
+	// console.log(calculator.mul());
+
+	// setTimeout(console.log(1),1000);
+
+	// setTimeout(console.log(2),);
+	// setTimeout(console.log(3),0);
+
+	 // window.onload = function() {
+  //       for(var i = 1; i < 21; i++) {
+  //           var button = document.createElement("button");
+  //           var text = document.createTextNode(i);
+  //           button.appendChild(text);
+  //           button.addEventListener("click", function() {
+  //              alert(this.firstChild.nodeValue); 
+  //           });
+  //           document.body.appendChild(button);
+  //       }    
+  //   }
+
+//   	function electionWinner(votes) {
+//     const voting = {};
+//     for(let v of votes){
+//         voting[v] = (voting[v] || 0) + 1;
+//     }
+
+//     let winners = [];
+//     let maxVotes = 0;
+
+//     for(let name in voting){
+//         if(voting[name] > maxVotes){
+//             maxVotes = voting[name];
+//             winners = [name];
+//         }
+//         else if (voting[name] === maxVotes){l
+//             winners.push(name);
+//         }
+//     }
+
+//     if(winners.length === 1){
+//         return winners[0];
+//     }
+//     winners.sort();
+//     return winners[winners.length - 1];
+// }
+// 		let winwin = [ "zella", "mary", "joe", "joe", "zella"];
+
+// 	 	let abc = electionWinner(winwin);
+
+// 	 	console.log(abc);
+
+//let res = {};
+// var res = [];
+// var res;
+// console.log(check(res));
+// function check(res){
+//     if(res = {}){
+//         for(let key in res){
+//         	console.log(1);
+//             return false;
+//         }
+//         	console.log(2);
+//             return true;
+//     } else if(Array.isArray(res = []) && res.length <= 0){
+//         console.log("abc");
+//     } else {
+//     	console.log("error")
+//     }
+    
+// }
+
+// var obj = {}
+// var obj = [];
+// console.log(isEmpty(obj))
+// function isEmpty(obj) {
+//     for(var key in obj) {
+//         if(obj.hasOwnProperty(key))
+//             return false;
+//     }
+//     return true;
+// }
+
+// if (Array.isArray(obj) && obj.length > 0) {
+// 	console.log("1");
+//             }
+//             else {
+//             	console.log("2");
+//             	 }
+
+
+
+// function counter (){
+// 	var n  = 0;
+// 	return {
+// 		count: function(){ return n++; },
+// 		reset: function(){n=0;}
+// 	};
+// }
+//  var  c= counter(), d= counter();
+
+//  console.log(c.count());
+//  console.log(d.count());
+//  console.log(c.reset());
+//  console.log(c.count());
+//  console.log(d.count());
+
+// var a = 5;
+// function one(){
+// 	a=6;
+// }
+
+// function two(){
+// 	alert(a);
+// }
+
+// two();
+
+// function changeType(){
+
+// var type=['mac','1'];
+// var element = document.getElementById('testField').value;
+// // console.log(element)
+// var testObject = [];
+
+// for (var i=1; i<=element; i++){
+// 	// testObject.push({
+//  //        [type[0]+'' + i] : i
+//  //    });
+//  //    console.log("111",testObject);
+// 	key = type[1]+'' + i
+// 	console.log(key);
+    
+// }
+// }
+
+function addNo() {
+	var allno = [1,2,3,4,5];
+	var targetNo = 5;
+	for(var i =0; i <= allno.length-1; i++){
+		for (var j = i + 1; j < allno.length; j++){
+				if (allno[i] + allno[j] == targetNo){
+					console.log("success", allno[i] , allno[j]);
+				}
+		}
+	}
+}
+addNo();
+
+// Clousure//
+	// var a = 100;
+
+	// function first() {
+	// 	var b = 200;
+
+	// 	function second() {
+	// 		console.log("Value-->", b);
+	// 		console.log("Value-->", a);
+
+
+	// 	}
+	// 	second();
+	// }
+	// first();
+////////////
+
+// function missingNum(nums){
+//     const numberArray = nums.sort((num1, num2)=>{
+//       return num1 - num2;
+//    });
+    
+//    for (let i=0; i < numberArray.length; i++){
+//       if(i !== numberArray[i]){
+//         return i;
+//       }
+//    }
+//  }
+//  console.log(missingNum([0,3,5,8,2,6,1,9,7]))
+// var ula=document.createElement('ul');
+// for(j=0; j<5;j++){
+// 	var ul=document.createElement('ul');
+// 	ul.innerHTML="<li>UL TEXT</li>";
+//     ula.appendChild(ul);
+//     for(i=0;i<5;i++)
+//     {
+//         var li=document.createElement('li');
+//         li.innerHTML="LI TEXT";
+//         ul.appendChild(li);
+//         for(k=0; k<5;k++){
+// 			var li=document.createElement('li');
+// 			li.innerHTML="SUB LI TEXT";
+// 		    ul.appendChild(li);
+// }
+//     }
+// }
+
+//     document.getElementById('twitter_status').appendChild(ula);
+
+
+// console.log(findMissing([1,2,3,4,5,6,8,9,10,11,12,13,14]))
+	</script>
+
+	<!-- <input type="number" name="typetest" id="testField">
+	<input type="submit" name="submitText" onclick="changeType()"> -->
+</body>
+</html>

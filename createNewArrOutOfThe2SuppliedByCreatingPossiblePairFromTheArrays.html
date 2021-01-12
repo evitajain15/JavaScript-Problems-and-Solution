@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS program</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		const arr = (a, b) => a.reduce((acc, x) => acc.concat(b.map(y => [x, y])), []);
+		
+		console.log(arr([1, 2], ['a', 'b']));
+	</script>
+</body>
+</html>

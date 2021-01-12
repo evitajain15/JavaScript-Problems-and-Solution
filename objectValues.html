@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destructuring Assignment</title>
+</head>
+<body>
+	<script>
+		let user = {
+			name: "John",
+			years: 30
+		};
+
+		let{name,years,isAdmin = "false"} = user;
+		console.log(name);
+		console.log(years);
+		console.log(isAdmin);
+	</script>
+</body>
+</html>

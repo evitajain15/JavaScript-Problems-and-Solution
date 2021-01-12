@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS program</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		const extend_Hexa = shortHexa =>
+			'#' +
+			shortHexa
+				.slice(shortHexa.startsWith('#') ? 1 : 0)
+				.split('')
+				.map(x => x + x)
+				.join('');
+				
+		console.log(extend_Hexa('#03f'));
+	</script>
+</body>
+</html>

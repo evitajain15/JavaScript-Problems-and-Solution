@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count</title>
+</head>
+
+<body>
+
+	<script>
+		function random_char(len){
+			var text = "";
+			var char_list = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+			for(var i=0; i < len; i++){  
+				text += char_list.charAt(Math.floor(Math.random() * char_list.length));
+			}
+			return text;
+		}
+		console.log(random_char(8));
+	</script>
+</body>
+</html>

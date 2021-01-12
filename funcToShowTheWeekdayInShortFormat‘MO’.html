@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>day and date</title>
+</head>
+<body>
+	<script>
+		
+		function getWeekDay(date){
+			let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+			let day = days[date.getDay()];
+			let d = day.toUpperCase().substring(0,2);
+			return d;
+		}
+
+		let date = new Date(2019, 3, 11);
+		console.log ( getWeekDay(date) );
+		
+	</script>
+</body>
+</html>

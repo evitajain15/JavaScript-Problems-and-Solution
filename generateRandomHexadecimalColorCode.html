@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS program</title>
+	<style>
+	
+	</style>
+	</head>
+<body>
+
+	<script>
+		const hexa = () => {
+			let n = (Math.random() * 0xfffff * 1000000).toString(16);
+			return '#' + n.slice(0, 6);
+		};
+
+		console.log(hexa())
+	</script>
+</body>
+</html>
